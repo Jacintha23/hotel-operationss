@@ -7,8 +7,9 @@ package com.pluralsight;
         private double price;
         private boolean isOccupied;
         private boolean isDirty;
+        private boolean isAvailable;
 
-    public Room(String roomType, int numberOfBeds, double price, boolean isOccupied, boolean isDirty)
+    public Room(String roomType, int numberOfBeds, double price, boolean isOccupied, boolean isDirty, boolean isAvailable)
     {
         this.roomType = roomType;
         this.numberOfBeds = numberOfBeds;
@@ -55,5 +56,13 @@ package com.pluralsight;
 
     public void setDirty(boolean dirty) {
         isDirty = dirty;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void setIsAvailable(boolean available) {
+        isAvailable = available;
     }
 }
