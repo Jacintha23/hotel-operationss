@@ -7,8 +7,7 @@ package com.pluralsight;
         private double price;
         private boolean isOccupied;
         private boolean isDirty;
-
-
+        // may not be necessary to add checkOut here.
     public Room(String roomType, int numberOfBeds, double price, boolean isOccupied, boolean isDirty)
     {
         this.roomType = roomType;
@@ -60,7 +59,24 @@ package com.pluralsight;
 
     public boolean isAvailable() {return !isOccupied && !isDirty;}
 
+    public void checkIn()
+    {
+        isDirty = true;
+        isOccupied = true;
+    } // multiple lines should be separate!
 
+    public void checkOut()
+    {
+        isOccupied = false;
+        isDirty = true;
+    }
+
+    // When a guest checks out of a room it must first be cleaned by a housekeeper, before
+    //another guest can check into the room.
+    public void cleanRoom()
+    {
+        isDirty = false;
+    }
 
 
 }
