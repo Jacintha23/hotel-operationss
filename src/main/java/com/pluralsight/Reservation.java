@@ -1,11 +1,12 @@
 package com.pluralsight;
 
-public class Reservation {
-    private String roomType;
-    private int numberOfNights;
-    private boolean isWeekend;
-    private double price;
-    private double reservation;
+    public class Reservation
+{
+        private String roomType;
+        private int numberOfNights;
+        private boolean isWeekend;
+        private double price;
+        private double reservation;
 
 
     public Reservation(String roomType, int numberOfNights,boolean isWeekend, double price, double reservation)
