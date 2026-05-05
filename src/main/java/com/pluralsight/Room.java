@@ -7,7 +7,7 @@ package com.pluralsight;
         private double price;
         private boolean isOccupied;
         private boolean isDirty;
-        private boolean isAvailable;
+
 
     public Room(String roomType, int numberOfBeds, double price, boolean isOccupied, boolean isDirty, boolean isAvailable)
     {
