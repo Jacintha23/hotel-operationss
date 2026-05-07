@@ -42,26 +42,67 @@ public class Hotel
         this.bookedBasicRooms = bookedBasicRooms;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public int getNumberOfSuites() {
+        return numberOfSuites;
+    }
 
+    public void setNumberOfSuites(int numberOfSuites) {
+        this.numberOfSuites = numberOfSuites;
+    }
 
+    public int getNumberOfRooms() {
+        return numberOfRooms;
+    }
 
+    public void setNumberOfRooms(int numberOfRooms) {
+        this.numberOfRooms = numberOfRooms;
+    }
 
+    public int getBookedSuites() {
+        return bookedSuites;
+    }
 
+    public void setBookedSuites(int bookedSuites) {
+        this.bookedSuites = bookedSuites;
+    }
 
+    public int getBookedBasicRooms() {
+        return bookedBasicRooms;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    public void setBookedBasicRooms(int bookedBasicRooms) {
+        this.bookedBasicRooms = bookedBasicRooms;
+    }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
